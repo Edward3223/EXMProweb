@@ -117,8 +117,16 @@
               "devServerTarget": "ExamenPW:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "ExamenPW"
+    }
+  },
+  "defaultProject": "ExamenPW",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -103,9 +103,9 @@ export class HomeComponent implements OnInit {
   upgradeContact(){
     this.editableContact.Id = this.Contact[this.existsIdProduct].Id
     this.editableContact.Nombre = this.SetContact.Nombre;
-    this.editableContact.Apellido = this.SetContact.Nombre;
-    this.editableContact.Numero = this.SetContact.Nombre;
-    this.editableContact.Email = this.SetContact.Nombre;
+    this.editableContact.Apellido = this.SetContact.Apellido;
+    this.editableContact.Numero = this.SetContact.Numero;
+    this.editableContact.Email = this.SetContact.Email;
     console.log(this.editableContact)
     this.db.updateContacts(this.editableContact).subscribe(resp =>{
       this.getContacts()

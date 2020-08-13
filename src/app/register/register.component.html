@@ -1,1 +1,46 @@
-<p>register works!</p>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body class="bckgound">
+
+    <section class="logincardflex">
+
+        <div class="card cart rounded" style="box-shadow: 0px 5px 13px 2px #352f2f;">
+            <div class="card-body loginform" style="position: relative; top: 50px;">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"> <b>Email:</b> </label>
+                        <input [(ngModel)]="usuario.Email" [ngModelOptions]="{standalone: true}" class="form-control rounded-pill" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"> <b>Password:</b> </label>
+                        <input [(ngModel)]="usuario.Password" [ngModelOptions]="{standalone: true}" type="password" class="form-control rounded-pill" id="password">
+                    </div>
+
+      <!-- radios options -->
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recibir correos informativos?</label>
+                    </div>
+                    <button (click)="onSubmit()" type="submit" class="btn btn-danger btn-lg btn-block" > <div>Registrar</div></button>
+                    <a [routerLink]="[ '/login']">Login</a>
+                    
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
